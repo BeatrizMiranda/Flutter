@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:udemy_aula/Contatos/home.dart';
+import 'package:udemy_aula/Gif/home.dart';
+
+
+const request = "https://api.hgbrasil.com/finance?format=json&key=77c1b4fb";
 
 void main() async {
   runApp(MaterialApp(
