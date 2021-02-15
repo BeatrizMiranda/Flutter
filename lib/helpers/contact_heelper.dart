@@ -22,7 +22,7 @@ class ContactHelper {
     if(_db != null) {
       return _db;
     } else {
-      _db = await initDb();
+      return _db = await initDb();
     }
   }
   
@@ -114,6 +114,8 @@ class Contact {
   String email;
   String phone;
   String img;
+
+  Contact();
 
   Contact.fromMap(Map map) {
     id = map[idColumn];
